@@ -47,11 +47,10 @@ char mostUniqFirstSymbol(string in)
         }
     }
 
-    // Find top value in place
+    // Find least value in place
     for (const auto& [k, v] : firstChar)
-        if(checkVal.second.first == v.first)
-            if(checkVal.second.second > v.second)
-                checkVal = make_pair(k, v);
+        if(checkVal.second.first == v.first && checkVal.second.second > v.second) 
+            checkVal = make_pair(k, v);
 
     return checkVal.first;
 }
