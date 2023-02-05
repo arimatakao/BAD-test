@@ -8,7 +8,7 @@
 
 using namespace std;
 
-char mostUniqFirstSymbol(string in) {
+char MostUniqFirstSymb(string in) {
   stringstream ss(in);
   string word;
   // First symbol, Counter, Place in text
@@ -60,7 +60,7 @@ int main() {
     return 1;
   }
 
-  cout << endl << mostUniqFirstSymbol(input) << endl;
+  cout << endl << MostUniqFirstSymb(input) << endl;
 
   return 0;
 }
